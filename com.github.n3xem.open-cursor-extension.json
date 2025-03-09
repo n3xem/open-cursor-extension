@@ -1,0 +1,7 @@
+{
+  "name": "com.github.n3xem.open_cursor_extension",
+  "description": "Open Cursor Extension",
+  "path": "/Users/yukyan/workspace/open-cursor-extension/main",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://iihfijaammfhlkbbpaglkckhjmapgpao/"]
+}

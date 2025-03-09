@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Open in Cursor",
+  "version": "1.0",
+  "description": "GitHubリポジトリをCursorで開く",
+  "permissions": ["nativeMessaging", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

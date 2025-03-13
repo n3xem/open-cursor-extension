@@ -17,7 +17,7 @@ type Message struct {
 
 func main() {
 	for {
-		// メッセージを読み取り
+		// メッセージを標準入力で読み取り
 		message, err := readMessage(os.Stdin)
 		if err != nil {
 			if err == io.EOF {

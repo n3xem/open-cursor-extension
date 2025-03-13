@@ -1,7 +1,7 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type === "openInCursor") {
-    chrome.runtime.sendNativeMessage(
-      "com.github.n3xem.open_cursor_extension",
+    chrome.runtime.sendNativeMessage( // アプリにメッセージを送信
+      "com.github.n3xem.open_cursor_extension", // アプリ名
       {
         org: message.org,
         repo: message.repo,
